@@ -1,0 +1,218 @@
+/* @theme booting-into-kubernetes */
+/*
+ * Custom Marp theme for the "Booting into Kubernetes with an Immutable OS"
+ * talk (CNCF Days Italy 2026, Santiago Merlos). Extends Marp's `gaia`
+ * theme. Dark, text-forward, system font, single accent. No icons, no
+ * background art — the story carries the deck.
+ */
+
+@import "gaia";
+
+/* ─── Base ─────────────────────────────────────────────────────────── */
+
+section {
+  background: #0a0a0a;
+  color: #e8e8e8;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.55;
+  padding: 40px 80px 60px 80px;
+  text-align: left;
+  justify-content: flex-start;
+}
+
+section h1 {
+  font-size: 52px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  margin: 0 0 18px 0;
+}
+
+section h2 {
+  font-size: 32px;
+  font-weight: 400;
+  color: #a8a8a8;
+  margin: 0 0 18px 0;
+  letter-spacing: -0.01em;
+}
+
+section p  { margin: 0 0 16px 0; }
+section ul,
+section ol { margin: 0; padding-left: 1.2em; }
+section li { margin: 6px 0; }
+
+/* ─── Blockquotes (signature lines) ────────────────────────────────── */
+
+section blockquote {
+  border: none;
+  margin: 0;
+  padding: 0;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 1.35;
+  color: #ffffff;
+  letter-spacing: -0.015em;
+}
+section blockquote::before,
+section blockquote::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* ─── Lead slides (title, signature quotes, Q&A) ───────────────────── */
+
+section.lead {
+  justify-content: center;
+  text-align: center;
+}
+section.lead blockquote { font-size: 52px; }
+section.lead h2 { color: #707070; font-size: 24px; margin-top: 32px; }
+
+/* ─── Tight slide (content-heavy: PXE, sysext) ─────────────────────── */
+
+section.tight { font-size: 24px; padding: 48px 70px; }
+section.tight h1 { font-size: 44px; margin-bottom: 12px; }
+section.tight h2 { font-size: 24px; margin-bottom: 18px; }
+section.tight li { margin: 4px 0; }
+section.tight pre { font-size: 16px; padding: 12px 16px; }
+
+/* ─── Breathing slide (centered closing question) ──────────────────── */
+
+section.breathe {
+  justify-content: space-between;
+  padding: 60px 100px 90px 100px;
+}
+section.breathe h1 { margin-bottom: 0; }
+section.breathe p { font-size: 32px; line-height: 1.55; max-width: 90%; }
+section.breathe blockquote {
+  font-size: 44px;
+  font-weight: 500;
+  color: #ffffff;
+  border: 0;
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.35;
+  max-width: 92%;
+}
+
+/* ─── Pagination + footer (small, dim, out of the way) ─────────────── */
+
+section::after {
+  color: #3a3a40;
+  font-size: 11px;
+  bottom: 8px;
+  left: 24px;
+  right: auto;
+}
+section footer {
+  color: #3a3a40;
+  font-size: 10px;
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  letter-spacing: 0.05em;
+  right: 24px;
+  left: auto;
+  bottom: 8px;
+  text-align: right;
+}
+
+/* ─── Code blocks (A/B, Butane, PXE) ───────────────────────────────── */
+
+section pre {
+  background: #111118;
+  border: 1px solid #1f1f28;
+  border-radius: 6px;
+  padding: 18px 22px;
+  font-family: "Fira Code", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 18px;
+  line-height: 1.45;
+  color: #e8e8e8;
+  overflow-x: auto;
+}
+section pre code { background: transparent; padding: 0; border: 0; }
+section code {
+  background: #14141a;
+  padding: 2px 6px;
+  border-radius: 4px;
+  border: 1px solid #1f1f28;
+  font-family: "Fira Code", ui-monospace, monospace;
+  font-size: 0.92em;
+}
+
+/* ─── Comparison table (mutable vs immutable OS) ───────────────────── */
+
+section table {
+  border-collapse: collapse;
+  margin-top: 8px;
+  font-size: 22px;
+  width: 100%;
+}
+section th, section td {
+  border: 1px solid #2a2a2a;
+  padding: 10px 14px;
+  text-align: left;
+  vertical-align: top;
+}
+section thead th { background: #14141a; color: #ffffff; font-weight: 600; }
+section tbody td:first-child { color: #a8a8a8; font-weight: 500; width: 18%; }
+section tbody td:nth-child(2) { color: #c8a08c; }
+section tbody td:nth-child(3) { color: #ffffff; }
+section tbody td:last-child  { color: #9ec5a8; font-style: italic; }
+
+/* ─── Two-column "What we do" slide (furyctl + Distribution) ───────── */
+
+.cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: start;
+  margin-top: 12px;
+}
+.cols h3 { font-size: 30px; font-weight: 600; color: #ffffff; margin: 0 0 12px 0; }
+.cols p { font-size: 24px; color: #cccccc; }
+.cols img { width: 220px; margin-top: 18px; display: block; }
+.cols code, .cols .handle {
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 18px;
+  color: #888888;
+  margin-top: 8px;
+  display: block;
+}
+
+/* ─── Logo row (Flatcar + CNCF lockup) ─────────────────────────────── */
+
+.logos {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  margin: 0 0 24px 0;
+}
+.logos p   { margin: 0; }
+.logos img { vertical-align: middle; }
+
+/* ─── Q&A slide (LinkedIn QR + slides QR) ──────────────────────────── */
+
+.qa-qrs {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin: 24px 0;
+}
+.qa-qrs > div { text-align: center; }
+.qa-qrs img   { display: block; margin: 0 auto 8px auto; }
+.qa-qrs p     { margin: 4px 0; font-size: 20px; color: #cccccc; }
+.qa-qrs code,
+.qa-qrs strong { font-size: 18px; color: #9aa0aa; }
+
+/* ─── Sources caption (Flatcar maturity slide) ─────────────────────── */
+
+.sources {
+  display: block;
+  margin-top: 28px;
+  font-size: 16px;
+  color: #666;
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  letter-spacing: 0.02em;
+}

@@ -1,0 +1,18 @@
+{
+  "name": "cncf-italy-2026",
+  "version": "1.0.0",
+  "private": true,
+  "license": "CC-BY-4.0",
+  "author": "Santiago Merlos",
+  "description": "Booting into Kubernetes with an Immutable OS — CNCF Days Italy 2026 talk by Santiago Merlos.",
+  "scripts": {
+    "render": "marp slides.md --html --theme-set themes/booting-into-kubernetes.css --allow-local-files -o dist/slides.html",
+    "pdf":    "marp slides.md --pdf  --theme-set themes/booting-into-kubernetes.css --allow-local-files -o dist/slides.pdf",
+    "pptx":   "marp slides.md --pptx --theme-set themes/booting-into-kubernetes.css --allow-local-files -o dist/slides.pptx",
+    "serve":  "marp slides.md --theme-set themes/booting-into-kubernetes.css --server --html --allow-local-files .",
+    "clean":  "rm -rf dist node_modules package-lock.json"
+  },
+  "dependencies": {
+    "@marp-team/marp-cli": "^4"
+  }
+}

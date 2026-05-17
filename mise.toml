@@ -1,0 +1,34 @@
+[tools]
+node = "lts"
+npm = "latest"
+
+[env]
+_.path = ["{{config_root}}/node_modules/.bin"]
+
+[tasks.bootstrap]
+description = "Install marp-cli."
+run = "npm install"
+
+[tasks.render]
+description = "Render slides.html."
+depends = ["bootstrap"]
+run = "npm run render"
+
+[tasks.pdf]
+description = "Render slides.pdf."
+depends = ["bootstrap"]
+run = "npm run pdf"
+
+[tasks.pptx]
+description = "Render slides.pptx (with speaker notes)."
+depends = ["bootstrap"]
+run = "npm run pptx"
+
+[tasks.serve]
+description = "Live-reload preview on http://localhost:8080."
+depends = ["bootstrap"]
+run = "npm run serve"
+
+[tasks.clean]
+description = "Remove build outputs and node_modules."
+run = "npm run clean"

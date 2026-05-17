@@ -1,21 +1,60 @@
-MIT License
+Creative Commons Attribution 4.0 International (CC BY 4.0)
 
 Copyright (c) 2026 Santiago Merlos
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+You are free to:
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+  Share — copy and redistribute the material in any medium or format
+  Adapt — remix, transform, and build upon the material for any purpose,
+          even commercially.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+Under the following terms:
+
+  Attribution — You must give appropriate credit, provide a link to the
+  license, and indicate if changes were made. You may do so in any
+  reasonable manner, but not in any way that suggests the licensor
+  endorses you or your use.
+
+  No additional restrictions — You may not apply legal terms or
+  technological measures that legally restrict others from doing anything
+  the license permits.
+
+Full text: https://creativecommons.org/licenses/by/4.0/legalcode
+
+---
+
+Disclaimer of Warranties and Limitation of Liability
+
+UNLESS OTHERWISE SEPARATELY UNDERTAKEN BY THE LICENSOR, TO THE EXTENT
+POSSIBLE, THE LICENSOR OFFERS THE LICENSED MATERIAL AS-IS AND AS-AVAILABLE,
+AND MAKES NO REPRESENTATIONS OR WARRANTIES OF ANY KIND CONCERNING THE
+LICENSED MATERIAL, WHETHER EXPRESS, IMPLIED, STATUTORY, OR OTHER. THIS
+INCLUDES, WITHOUT LIMITATION, WARRANTIES OF TITLE, MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, ABSENCE OF LATENT OR OTHER
+DEFECTS, ACCURACY, OR THE PRESENCE OR ABSENCE OF ERRORS, WHETHER OR NOT
+KNOWN OR DISCOVERABLE.
+
+TO THE EXTENT POSSIBLE, IN NO EVENT WILL THE LICENSOR BE LIABLE TO YOU ON
+ANY LEGAL THEORY (INCLUDING, WITHOUT LIMITATION, NEGLIGENCE) OR OTHERWISE
+FOR ANY DIRECT, SPECIAL, INDIRECT, INCIDENTAL, CONSEQUENTIAL, PUNITIVE,
+EXEMPLARY, OR OTHER LOSSES, COSTS, EXPENSES, OR DAMAGES ARISING OUT OF THIS
+LICENSE OR USE OF THE LICENSED MATERIAL, EVEN IF THE LICENSOR HAS BEEN
+ADVISED OF THE POSSIBILITY OF SUCH LOSSES, COSTS, EXPENSES, OR DAMAGES.
+
+The disclaimer and limitation above are intended to approximate, as
+closely as possible, an absolute disclaimer and waiver of all liability.
+
+This material is provided for educational and informational purposes
+only. Code snippets, configurations, and procedures shown in the slides
+or demos are illustrative; verify them against current upstream
+documentation before applying them to production systems. The author
+assumes no responsibility for outcomes resulting from use of this
+material.
+
+---
+
+Third-party trademarks:
+  - The Flatcar Container Linux logo is property of the CNCF / Flatcar
+    project. Used per the CNCF trademark policy.
+  - The CNCF horizontal lockup is property of The Linux Foundation,
+    used under the CNCF artwork guidelines.
