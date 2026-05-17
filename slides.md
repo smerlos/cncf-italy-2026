@@ -489,19 +489,19 @@ home. Say it slowly. Don't follow it with anything except a thank-you.
 
 <div>
 
-![h:200](assets/qr/linkedin.png)
+![h:200](assets/qr/slides.png)
 
-**LinkedIn**
-`linkedin.com/in/smerlos`
+**Slides + code**
+`github.com/smerlos/cncf-italy-2026`
 
 </div>
 
 <div>
 
-![h:200](assets/qr/slides.png)
+![h:200](assets/qr/santiago-merlos_booting-into-kubernetes-with-an-immutable-os.png)
 
-**Slides + code**
-`github.com/smerlos/cncf-italy-2026`
+**Session feedback**
+CNCF Days Italy 2026
 
 </div>
 
@@ -510,9 +510,11 @@ home. Say it slowly. Don't follow it with anything except a thank-you.
 **Santiago Merlos** · `@smerlos` · CNCF Days Italy 2026
 
 <!--
-Q&A slide. Leave it up while taking questions. The two QR codes on screen are
-LinkedIn (left) and the slides repo (right) so the audience can scan with a
-phone and follow up later. Repeat the handles out loud once. Keep answers
-short — if a question needs a deeper answer than the room time allows, offer
-to continue on LinkedIn or at the booth. Do not start a new train of thought.
+Q&A slide. Leave it up while taking questions. Two QR codes on screen:
+left is the slides repo so the audience can grab the deck and code, right is
+the official CNCF Days Italy 2026 session-feedback QR provided by the
+organizers — invite the audience to rate the session before they leave the
+room. Keep answers short — if a question needs a deeper answer than the room
+time allows, offer to continue at the booth. Do not start a new train of
+thought.
 -->

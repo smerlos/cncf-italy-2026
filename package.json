@@ -9,7 +9,7 @@
     "render": "marp slides.md --html --theme-set themes/booting-into-kubernetes.css --allow-local-files -o dist/slides.html",
     "pdf":    "marp slides.md --pdf  --theme-set themes/booting-into-kubernetes.css --allow-local-files -o dist/slides.pdf",
     "pptx":   "marp slides.md --pptx --theme-set themes/booting-into-kubernetes.css --allow-local-files -o dist/slides.pptx",
-    "serve":  "marp slides.md --theme-set themes/booting-into-kubernetes.css --server --html --allow-local-files .",
+    "serve":  "marp --theme-set themes/booting-into-kubernetes.css --server --html --allow-local-files .",
     "clean":  "rm -rf dist node_modules package-lock.json"
   },
   "dependencies": {
